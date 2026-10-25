@@ -5,7 +5,7 @@ terraform {
     bucket         = "infra-versioning-stateful-bucket50"
     key            = "infra/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-locks23"
+    use_lockfile   = "terraform-locks23"
     encrypt        = true
   }
 }
